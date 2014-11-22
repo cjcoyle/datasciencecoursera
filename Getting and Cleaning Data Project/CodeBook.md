@@ -17,83 +17,83 @@ The long-form tidy data set contains four variables. These four variables are li
 
 1. subject
 
-- An integer variable that ranges from 1 to 30.
-- This identifies the subject of the experiment. Each subject in the experiment has a unique numerical identifier.
+	- An integer variable that ranges from 1 to 30.
+	- This identifies the subject of the experiment. Each subject in the experiment has a unique numerical identifier.
 
 2. feature
 
-- A factor variable
-- This identifies the feature that is being measured for a given observation in the experiment. There are 66 features per subject in this data set.
-- Each factor value is structured in a consistent format for easier comprehension. The structure is ordered as follows:
+	- A factor variable
+	- This identifies the feature that is being measured for a given observation in the experiment. There are 66 features per subject in this data set.
+	- Each factor value is structured in a consistent format for easier comprehension. The structure is ordered as follows:
 
-	i.) Domain
+		1. Domain
 		- 2 possible values:
-			i.) time
-			ii.) freq (frequency)
-	ii.) Signal
+			1.) time
+			2.) freq (frequency)
+		2. Signal
 		- 2 possible values:
-			i.) Body
-			ii.) Gravity
-	iii.) Device
+			1. Body
+			2. Gravity
+		3. Device
 		- 2 possible values:
-			i.) Acc (accelerometer)
-			ii.) Gyro (gyroscope)
-	iv.) Measurement (if applicable)
+			1. Acc (accelerometer)
+			2. Gyro (gyroscope)
+		4. Measurement (if applicable)
 		- 3 possible values:
-			i.) Jerk (the change in acceleration)
-			ii.) Mag (magnitude, as measured by the Euclidean norm)
-			iii.) JerkMag (jerk and magnitude)
-	v.) Statistic 
+			1. Jerk (the change in acceleration)
+			2. Mag (magnitude, as measured by the Euclidean norm)
+			3. JerkMag (jerk and magnitude)
+		5. Statistic 
 		- 2 possible values:
-			i.) Mean (average)
-			ii.) StdDev (standard deviation)
-	vi.) Direction (if applicable)
+			1. Mean (average)
+			2. StdDev (standard deviation)
+		6. Direction (if applicable)
 		- 3 possible values:
-			i.) X (x-direction)
-			ii.) Y (y-direction)
-			iii.) Z (z-direction)
+			1. X (x-direction)
+			2. Y (y-direction)
+			3. Z (z-direction)
 
-- Examples of features include the following:
+	- Examples of features include the following:
 
-	i.) freqBodyAccJerkMeanX
-		- Domain: Frequency
-		- Signal: Body
-		- Device: Accelerometer
-		- Measurement: Jerk
-		- Statistic: Mean
-		- Direction: X
+		1. freqBodyAccJerkMeanX
+			- Domain: Frequency
+			- Signal: Body
+			- Device: Accelerometer
+			- Measurement: Jerk
+			- Statistic: Mean
+			- Direction: X
 
-	ii.) timeGravityAccStdDevY
-		- Domain: Time
-		- Signal: Gravity
-		- Device: Accelerometer
-		- Measurement: None
-		- Statistic: Standard Deviation
-		- Direction: Y
+		2. timeGravityAccStdDevY
+			- Domain: Time
+			- Signal: Gravity
+			- Device: Accelerometer
+			- Measurement: None
+			- Statistic: Standard Deviation
+			- Direction: Y
 
-	iii.) freqBodyGyroJerkMagMean
-		- Domain: Frequency
-		- Signal: Body
-		- Device: Gyroscope
-		- Measurement: Jerk and Magnitude
-		- Statistic: Mean
-		- Direction: None
+		3. freqBodyGyroJerkMagMean
+			- Domain: Frequency
+			- Signal: Body
+			- Device: Gyroscope
+			- Measurement: Jerk and Magnitude
+			- Statistic: Mean
+			- Direction: None
 	
-	iv.) Use the code "levels(tidyData$features)" to retrieve all 68 values of this variable.
+		4. Use the code "levels(tidyData$features)" to retrieve all 68 values of this variable.
 
 3. activity
 
-- A factor variable
-- This identifies the activity performed by the subject. There are six possible activities in this data set:
+	- A factor variable
+	- This identifies the activity performed by the subject. There are six possible activities in this data set:
 
-    	i.) Walking
-    	ii.) Walking Upstairs
-	iii.) Walking Downstairs
-    	iv.) Sitting
-    	v.) Standing
-    	vi.) Laying
+    		1.) Walking
+    		2.) Walking Upstairs
+		3.) Walking Downstairs
+    		4.) Sitting
+    		5.) Standing
+    		6.) Laying
 
 4. meanValue
 
-- A continuous, numerical variable
-- The average value for the given observation
+	- A continuous, numerical variable
+	- The average value for the given observation
