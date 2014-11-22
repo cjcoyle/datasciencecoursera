@@ -79,13 +79,12 @@ The long-form tidy data set contains four variables. These four variables are li
 
 	- A factor variable
 	- This identifies the activity performed by the subject. There are six possible activities in this data set:
-
 		- Walking
 		- Walking Upstairs
 		- Walking Downstairs
-    		- Sitting
-    		- Standing
-    		- Laying
+		- Sitting
+		- Standing
+		- Laying
 
 4. meanValue
 
