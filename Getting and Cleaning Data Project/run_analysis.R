@@ -35,7 +35,6 @@ longData <- melt(mergedData, id.vars = c("Subject", "Activity"), variable.name =
 tidyData <- dcast(longData, Subject + Feature ~ Activity, fun.aggregate = mean)
 tidyData <- melt(tidyData, id.vars = c("Subject", "Feature"), variable.name = "activity", value.name = "meanValue")
 names(tidyData) <- c("subject", "feature", "activity", "meanValue")
-tidyData$feature <- factor(tidyData$feature)
 
 # Modify "Features" Values for Clarity and Completeness
 tidyData[,2] <- sub("\\-mean\\(\\)", "Mean", tidyData[,2])
@@ -43,7 +42,8 @@ tidyData[,2] <- sub("\\-std\\(\\)", "StdDev", tidyData[,2])
 tidyData[,2] <- sub("^t", "time", tidyData[,2])
 tidyData[,2] <- sub("^f", "freq", tidyData[,2])
 tidyData[,2] <- sub("\\-([XYZ])$", "\\1", tidyData[,2])
-
+tidyData[,2] <- sub("(Body){2}", "Body", tidyData[,2])
+tidyData$feature <- factor(tidyData$feature)
 
 # Save the Tidy Data Set
 write.table(tidyData, file = "tidyData.txt", row.names = FALSE)
