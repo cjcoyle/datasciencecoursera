@@ -66,7 +66,7 @@ The long-form tidy data set contains four variables. These four variables are li
 			- Measurement: Jerk and Magnitude
 			- Statistic: Mean
 			- Direction: None
-		4. Use the code "levels(tidyData$features)" to retrieve all 68 values of this variable.
+		4. Use the code "levels(tidyData$features)" to retrieve all 66 values of this variable.
 
 3. activity
 	- A factor variable
