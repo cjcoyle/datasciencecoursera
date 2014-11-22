@@ -26,32 +26,26 @@ The long-form tidy data set contains four variables. These four variables are li
 	- This identifies the feature that is being measured for a given observation in the experiment. There are 66 features per subject in this data set.
 	- Each factor value is structured in a consistent format for easier comprehension. The structure is ordered as follows:
 
-		1. Domain
-		- 2 possible values:
-			1.) time
-			2.) freq (frequency)
-		2. Signal
-		- 2 possible values:
-			1. Body
-			2. Gravity
-		3. Device
-		- 2 possible values:
-			1. Acc (accelerometer)
-			2. Gyro (gyroscope)
-		4. Measurement (if applicable)
-		- 3 possible values:
-			1. Jerk (the change in acceleration)
-			2. Mag (magnitude, as measured by the Euclidean norm)
-			3. JerkMag (jerk and magnitude)
-		5. Statistic 
-		- 2 possible values:
-			1. Mean (average)
-			2. StdDev (standard deviation)
-		6. Direction (if applicable)
-		- 3 possible values:
-			1. X (x-direction)
-			2. Y (y-direction)
-			3. Z (z-direction)
+		1. Domain (2 possible values)
+			- time
+			- freq (frequency)
+		2. Signal (2 possible values)
+			- Body
+			- Gravity
+		3. Device (2 possible values)
+			- Acc (accelerometer)
+			- Gyro (gyroscope)
+		4. Measurement (3 possible values, if applicable)
+			- Jerk (the change in acceleration)
+			- Mag (magnitude, as measured by the Euclidean norm)
+			- JerkMag (jerk and magnitude)
+		5. Statistic (2 possible values)
+			- Mean (average)
+			- StdDev (standard deviation)
+		6. Direction (3 possible values, if applicable)
+			- X (x-direction)
+			- Y (y-direction)
+			- Z (z-direction)
 
 	- Examples of features include the following:
 
@@ -86,12 +80,12 @@ The long-form tidy data set contains four variables. These four variables are li
 	- A factor variable
 	- This identifies the activity performed by the subject. There are six possible activities in this data set:
 
-    		1.) Walking
-    		2.) Walking Upstairs
-		3.) Walking Downstairs
-    		4.) Sitting
-    		5.) Standing
-    		6.) Laying
+		- Walking
+		- Walking Upstairs
+		- Walking Downstairs
+    		- Sitting
+    		- Standing
+    		- Laying
 
 4. meanValue
 
