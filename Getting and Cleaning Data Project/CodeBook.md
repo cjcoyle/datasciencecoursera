@@ -21,11 +21,9 @@ The long-form tidy data set contains four variables. These four variables are li
 	- This identifies the subject of the experiment. Each subject in the experiment has a unique numerical identifier.
 
 2. feature
-
 	- A factor variable
 	- This identifies the feature that is being measured for a given observation in the experiment. There are 66 features per subject in this data set.
 	- Each factor value is structured in a consistent format for easier comprehension. The structure is ordered as follows:
-
 		1. Domain (2 possible values)
 			- time
 			- freq (frequency)
@@ -46,9 +44,7 @@ The long-form tidy data set contains four variables. These four variables are li
 			- X (x-direction)
 			- Y (y-direction)
 			- Z (z-direction)
-
 	- Examples of features include the following:
-
 		1. freqBodyAccJerkMeanX
 			- Domain: Frequency
 			- Signal: Body
@@ -56,7 +52,6 @@ The long-form tidy data set contains four variables. These four variables are li
 			- Measurement: Jerk
 			- Statistic: Mean
 			- Direction: X
-
 		2. timeGravityAccStdDevY
 			- Domain: Time
 			- Signal: Gravity
@@ -64,7 +59,6 @@ The long-form tidy data set contains four variables. These four variables are li
 			- Measurement: None
 			- Statistic: Standard Deviation
 			- Direction: Y
-
 		3. freqBodyGyroJerkMagMean
 			- Domain: Frequency
 			- Signal: Body
@@ -72,11 +66,9 @@ The long-form tidy data set contains four variables. These four variables are li
 			- Measurement: Jerk and Magnitude
 			- Statistic: Mean
 			- Direction: None
-	
 		4. Use the code "levels(tidyData$features)" to retrieve all 68 values of this variable.
 
 3. activity
-
 	- A factor variable
 	- This identifies the activity performed by the subject. There are six possible activities in this data set:
 		1. Walking
@@ -87,6 +79,5 @@ The long-form tidy data set contains four variables. These four variables are li
 		6. Laying
 
 4. meanValue
-
 	- A continuous, numerical variable
 	- The average value for the given observation
